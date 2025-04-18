@@ -7,7 +7,7 @@ const Contact = () => {
           <p>Email: <a href="mailto:jankichauhan0510@gmail.com" className="text-blue-600">jankichauhan0510@gmail.com</a></p>
           <p>Phone: <a href="tel:+919723493804" className="text-blue-600">+91 9723493804</a></p>
           <p>GitHub: <a href="https://github.com/jankichauhan510" className="text-blue-600">github.com/jankichauhan510</a></p>
-          <p>LinkedIn: <a href="https://linkedin.com/in/janki-chauhan" className="text-blue-600">linkedin.com/in/janki-chauhan</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/janki-chauhan-/" className="text-blue-600">linkedin.com/in/janki-chauhan</a></p>
         </div>
       </section>
     );
