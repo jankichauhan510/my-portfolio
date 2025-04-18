@@ -31,13 +31,23 @@ const Hero = () => {
           ))}
         </h1>
 
-        <h2 className="text-xl md:text-2xl font-medium text-gray-700 mb-6">
-          Full Stack Developer | Backend Engineer | UI Designer
+        <h2 className="text-xl md:text-2xl font-medium text-gray-700 mb-6 flex flex-wrap justify-center md:justify-start gap-2">
+          {["Full Stack Developer", "|", "Backend Engineer", "|", "UI Designer"].map((text, index) => (
+            <motion.span
+              key={index}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 + index * 0.3, duration: 0.6 }}
+              className={text === "|" ? "mx-1 text-blue-500 font-bold" : "text-gray-700"}
+            >
+              {text}
+            </motion.span>
+          ))}
         </h2>
+
         <p className="text-gray-600 mb-6">
           Passionate about building <span className="font-semibold">efficient and scalable web applications</span> with seamless user experiences. Specializing in <span className="font-semibold">React.js, Node.js, Express,</span> and <span className="font-semibold">MSSQL</span>. With a strong background in <span className="font-semibold">full-stack development</span>, I focus on creating <span className="font-semibold">responsive, user-friendly interfaces</span> and <span className="font-semibold">robust backend architectures</span>. I'm deeply committed to <span className="font-semibold">learning and applying best practices</span> in software development, always staying updated with the <span className="font-semibold">latest industry trends and technologies</span>. I enjoy <span className="font-semibold">collaborating with teams</span>, <span className="font-semibold">solving complex problems</span>, and delivering <span className="font-semibold">high-quality solutions</span>. I have experience in working with various <span className="font-semibold">frameworks, databases, and technologies</span> to build <span className="font-semibold">modern, efficient, and maintainable applications</span>.
         </p>
-
 
         <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
           <a
